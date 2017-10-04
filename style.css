@@ -1991,9 +1991,9 @@ p.contained80{
   background:#fff !important;
 }
 
-.page-our-people .vc_single_image-wrapper img [
+.page-our-people .vc_single_image-wrapper img {
 	width: 213px;
-]
+}
 
 .vc_custom_1495477232540 .vc_column-inner {
 	max-height: 74px;
