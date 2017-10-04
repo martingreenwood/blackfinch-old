@@ -1993,7 +1993,8 @@ p.contained80{
   background:#fff !important;
 }
 
-.page-our-people .vc_single_image-wrapper img {
+.page-our-people .vc_single_image-wrapper img,
+.page-products .vc_single_image-wrapper img {
 	width: 213px;
 }
 
