@@ -1991,8 +1991,9 @@ p.contained80{
   background:#fff !important;
 }
 
-
-
+.page-our-people .vc_single_image-wrapper img [
+	width: 213px;
+]
 
 .vc_custom_1495477232540 .vc_column-inner {
 	max-height: 74px;
@@ -2341,6 +2342,7 @@ a, .contactPage input[type=button], .contactPage input[type=submit], .menuDrop1,
 
 
 .page-products .site-info, 
+.page-our-people .site-info, 
 .page-evolve-media .site-info, 
 .page-evolve-asset-focused .site-info, 
 .page-adapt-aim  .site-infol,
