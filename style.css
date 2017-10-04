@@ -2146,7 +2146,7 @@ input:not([type]):focus:not([readonly]), input[type=text]:focus:not([readonly]),
 	padding-right:25px !important
 }
 
-.thriceHomeContain{
+.thriceHomeContain, .thriveHomeContain{
 	border-left: 1px solid #9499a0 !important;;
 	padding-left:25px !important;
 }
