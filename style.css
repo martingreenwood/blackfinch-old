@@ -1978,6 +1978,8 @@ p.contained80{
 	/* background: rgba(126,199,202,0.7);*/
 }
 
+
+
 .thriveMore{
 	cursor:pointer;
 	margin-bottom:25px !important;
@@ -1987,7 +1989,7 @@ p.contained80{
 	color:#fff !important;
 }
 
-.thriveorangeOverlay a:before{
+.thriveOverlay a:before{
   background:#fff !important;
 }
 
