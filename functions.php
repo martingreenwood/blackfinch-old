@@ -148,6 +148,36 @@ require get_template_directory() . '/inc/customizer.php';
 require get_template_directory() . '/inc/jetpack.php';
 
 
+function bf_custom_post_types() {
+	register_post_type( 'event',
+		array(
+			'labels' => array(
+				'name' => __( 'Events' ),
+				'singular_name' => __( 'Event' )
+			),
+			'public' => true,
+			'has_archive' => true,
+			'menu_icon'   => 'dashicons-tickets-alt',
+        	'supports'    => array( 'title', 'editor', 'thumbnail', 'revisions' ),
+		)
+	);
+
+	register_post_type( 'case-study',
+		array(
+			'labels' => array(
+				'name' => __( 'Case Studies' ),
+				'singular_name' => __( 'Case Study' )
+			),
+			'public' => true,
+			'has_archive' => true,
+			'menu_icon'   => 'dashicons-format-status',
+        	'supports'    => array( 'title', 'editor', 'thumbnail', 'revisions' ),
+		)
+	);
+}
+add_action( 'init', 'bf_custom_post_types' );
+
+
 function add_first_and_last($items) {
     $items[1]->classes[] = 'firstItem';
     $items[count($items)]->classes[] = 'lastItem';
@@ -305,7 +335,7 @@ function get_news(){
 	ob_start();
 	
 	global $post;
-	$args = array( 'posts_per_page' => 5,  );
+	$args = array( 'posts_per_page' => 6,  );
 	
 	$myposts = get_posts( $args );
 	
@@ -356,11 +386,14 @@ function get_news(){
 
 add_shortcode( 'get_news', 'get_news' );
 
-function get_case_studies(){
+function get_casestudies(){
 	ob_start();
 	
 	global $post;
-	$args = array( 'posts_per_page' => 5,  );
+	$args = array( 
+		'post_type' 		=> 'case-study', 
+		'posts_per_page' 	=> 6,
+	);
 	
 	$myposts = get_posts( $args );
 	
@@ -387,7 +420,7 @@ function get_case_studies(){
 
 	<div class="wpb_text_column wpb_content_element singlePostTitle">
 		<div class="wpb_wrapper">
-			<h4><a href="'.get_the_permalink($post->ID).'">'.$post->post_title.'<span>'.get_the_author_meta('display_name', $author_id).'</span></a></h4>
+			<h4><a href="'.get_the_permalink($post->ID).'">'.$post->post_title.'<span>'.get_field('sector', $post->ID).'</span></a></h4>
 
 		</div>
 	</div>
@@ -409,13 +442,19 @@ function get_case_studies(){
 	return ob_get_clean();
 }
 
-add_shortcode( 'get_case_studies', 'get_case_studies' );
+add_shortcode( 'get_casestudies', 'get_casestudies' );
 
 function get_events(){
 	ob_start();
 	
 	global $post;
-	$args = array( 'posts_per_page' => 5,  );
+	$args = array( 
+		'post_type' 		=> 'event', 
+		'posts_per_page' 	=> 6,
+		'meta_key'			=> 'event_date',
+		'orderby'			=> 'meta_value',
+		'order'				=> 'ASC'
+	);
 	
 	$myposts = get_posts( $args );
 	
@@ -442,7 +481,7 @@ function get_events(){
 
 	<div class="wpb_text_column wpb_content_element singlePostTitle">
 		<div class="wpb_wrapper">
-			<h4><a href="'.get_the_permalink($post->ID).'">'.$post->post_title.'<span>'.get_the_author_meta('display_name', $author_id).'</span></a></h4>
+			<h4><a href="'.get_the_permalink($post->ID).'">'.$post->post_title.'<span>'. date( "dS F Y", strtotime(get_field( 'event_date', $post->ID ))).'</span></a></h4>
 
 		</div>
 	</div>
