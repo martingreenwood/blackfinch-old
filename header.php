@@ -56,7 +56,7 @@ if(is_front_page()){
 
 	<div class="termsOverlay" style="display:none;">
     	<div class="termsOverlayContent">
-    		<h4>Terms & Conditions</h4>
+    		<h4>Terms &amp; Conditions</h4>
         
        		<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl.</p>
 
@@ -147,8 +147,8 @@ if(is_front_page()){
 	<?php if(is_front_page()){ ?>
     	<div class="infobar row homeBar">
 			<div class="searchBar">
-            	<div class="phoneIcon"><img class="" src="<?php echo get_template_directory_uri() ; ?>/img/phone.jpg" /></div>
-                <div class="emailIcon2"><img class="" src="<?php echo get_template_directory_uri() ; ?>/img/email.jpg" /></div>
+            	<div class="phoneIcon"><img class="" src="<?php echo get_template_directory_uri() ; ?>/img/phone.jpg"></div>
+                <div class="emailIcon2"><a href="<?php home_url("/contact"); ?>"><img class="" src="<?php echo get_template_directory_uri() ; ?>/img/email.jpg"></a></div>
                 
                 <form class="searchForm" method="get" action="<?php home_url( "/"); ?>">
 				<input type="text" placeholder="Search" class="searchExpand" value="" name="s" />
@@ -160,8 +160,8 @@ if(is_front_page()){
             	<div class="phoneNumber">Call us on 01684 571 255</div>
             </div>
             
-            <div class="searchIcon"><img class="" src="<?php echo get_template_directory_uri() ; ?>/img/search.jpg" /></div> 
-            <div class="emailIcon"><img class="" src="<?php echo get_template_directory_uri() ; ?>/img/email.jpg" /></div>
+            <div class="searchIcon"><img class="" src="<?php echo get_template_directory_uri() ; ?>/img/search.jpg"></div> 
+            <div class="emailIcon"><a href="<?php home_url("/contact"); ?>"><img class="" src="<?php echo get_template_directory_uri() ; ?>/img/email.jpg"></a></div>
         </div>
 	<?php } ?>
     

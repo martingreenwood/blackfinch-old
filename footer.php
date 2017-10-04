@@ -19,14 +19,23 @@
             
             <div class="row">
         		<div class="col s5">
-                	<p>Blackfinch Investments Limited</p>
-                    <p>Blackfinch House, Chequers Close, Malvern, Worcestershire WR14 1GP</p>
+                	<p><?php bloginfo( 'name' ); ?></p>
+                    <p><?php the_field( 'address', 'options' ); ?></p>
                     <p>Blackfinch Investments Ltd is authorised and regulated by the Financial Conduct Authority.</p>
                 </div>
             	<div class="col s3">
-                	<p>T 01684 571 255</p>
-                    <!-- <p>F 02071 609 319</p> -->
-                    <p>E enquiries@blackfinch.com</p>
+            		<?php if (get_field( 'phone', 'options' )): ?>
+                	<p>T <?php the_field( 'phone', 'options' ); ?></p>
+                	<?php endif; ?>
+                    
+                    <?php if (get_field( 'fax', 'options' )): ?>
+                    <p>F <?php the_field( 'fax', 'options' ); ?></p>
+					<?php endif; ?>
+                    
+                    <?php if (get_field( 'email', 'options' )): ?>
+                    <p>E <?php the_field( 'email', 'options' ); ?></p>
+                    <?php endif; ?>
+
                 </div>
             	<div class="col s2">
                 	<p><a href="<?php echo home_url( "/terms-and-conditions" ); ?>">Terms and Conditions</a></p>

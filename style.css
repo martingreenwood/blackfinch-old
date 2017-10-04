@@ -962,9 +962,13 @@ body{
 
 .menuWrapper {
 	position: fixed;
-	z-index: 999999999999;
+	z-index: 1;
 	width: 100%;
 	max-width: 1040px;
+}
+
+.home .menuWrapper {
+	// z-index: 999999999999;
 }
 
 .menuDrop{

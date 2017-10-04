@@ -221,10 +221,8 @@ function changeMenu(){
 		
 		
 		var src = $('.searchIcon img').attr('src');
-	    var newsrc = (src=='<?php echo get_template_directory_uri(); ?>/img/search.jpg') ? '<?php echo get_template_directory_uri(); ?>/img/close.jpg' : '<?php echo get_template_directory_uri(); ;?>/img/search.jpg';
+	    var newsrc = (src=='/wp-content/themes/blackfinch/img/search.jpg') ? '/wp-content/themes/blackfinch/img/close.jpg' : '/wp-content/themes/blackfinch/img/search.jpg';
 	    $('.searchIcon img').attr('src', newsrc );
-		
-		//$('.searchIcon img').attr('src', '<?php echo get_template_directory_uri(); ?>/img/close.jpg');
 
 		$('.searchBar').animate({width: 'toggle'}, 250);
 
