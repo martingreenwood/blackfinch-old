@@ -221,7 +221,7 @@ function get_adapt(){
 				<div class="wpb_text_column wpb_content_element ">
 					<div class="wpb_wrapper">
 						<h1 class="adaptgreen">Adapt</h1>
-						<h4><h4>'.get_field( 'adapt_strapline', 'options' ).'</h4></h4>
+						<h4>'.get_field( 'adapt_strapline', 'options' ).'</h4></h4>
 						<a class="underline adaptMore">More</a>
 					</div>
 				</div>
@@ -316,7 +316,7 @@ function get_evolve(){
 				<div class="wpb_text_column wpb_content_element ">
 					<div class="wpb_wrapper">
 						<h1 class="evolvepurple">Evolve</h1>
-						<h4><h4>'.get_field( 'evolve_strapline', 'options' ).'</h4></h4>
+						<h4>'.get_field( 'evolve_strapline', 'options' ).'</h4></h4>
 						<a class="underline evolveMore">More</a>
 					</div>
 				</div>
@@ -357,18 +357,12 @@ function get_news(){
 						</figure>
 					</div>
 
-	<div class="wpb_text_column wpb_content_element singlePostTitle">
-		<div class="wpb_wrapper">
-			<h4><a href="'.get_the_permalink($post->ID).'">'.$post->post_title.'<span>'.get_the_author_meta('display_name', $author_id).'</span></a></h4>
-
-		</div>
-	</div>
-</div></div></div>';
-	
-	
-	
-		
-	
+					<div class="wpb_text_column wpb_content_element singlePostTitle">
+						<div class="wpb_wrapper">
+							<h4><a href="'.get_the_permalink($post->ID).'">'.$post->post_title.'<span>'.get_the_author_meta('display_name', $author_id).'</span></a></h4>
+						</div>
+					</div>
+				</div></div></div>';
 	 ?>
 
 	<?php endforeach; 
