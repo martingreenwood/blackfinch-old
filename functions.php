@@ -221,8 +221,7 @@ function get_adapt(){
 				<div class="wpb_text_column wpb_content_element ">
 					<div class="wpb_wrapper">
 						<h1 class="adaptgreen">Adapt</h1>
-						<h4>inheritance tax 
-						<br>planning</h4>
+						<h4><h4>'.get_field( 'adapt_strapline', 'options' ).'</h4></h4>
 						<a class="underline adaptMore">More</a>
 					</div>
 				</div>
@@ -269,8 +268,7 @@ function get_thrive(){
 				<div class="wpb_text_column wpb_content_element ">
 					<div class="wpb_wrapper">
 						<h1 class="thriveorange">Thrive</h1>
-						<h4>Lorem Ipsum 
-						<br>Dolar</h4>
+						<h4>'.get_field( 'thrive_strapline', 'options' ).'</h4>
 						<a class="underline thriveMore">More</a>
 					</div>
 				</div>
@@ -318,8 +316,7 @@ function get_evolve(){
 				<div class="wpb_text_column wpb_content_element ">
 					<div class="wpb_wrapper">
 						<h1 class="evolvepurple">Evolve</h1>
-						<h4>enterprise investment 
-						<br>scheme</h4>
+						<h4><h4>'.get_field( 'evolve_strapline', 'options' ).'</h4></h4>
 						<a class="underline evolveMore">More</a>
 					</div>
 				</div>
