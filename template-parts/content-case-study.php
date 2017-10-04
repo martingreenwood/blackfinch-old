@@ -12,12 +12,14 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 	<div class="entry-content">
-		<?php
-		
-			the_title( '<h3>', '</h3>' );
-		
-			echo '<h4>'.get_the_author_meta('display_name', $author_id).'</h4>';
+		<?php the_title( '<h3>', '</h3>' ); ?>
+
+		<h4>
+			<?php the_field( 'sector'); ?>
+		</h4>
 			
+		<?php 
+		
 			// $images = get_field('images');
 			// foreach( $images as $image ){
 			//	echo '<a href="'.$image['url'].'"><img src="'.$image['sizes']['large'].'" alt="'.$image['alt'].'" /></a>';
