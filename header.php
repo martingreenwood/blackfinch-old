@@ -110,7 +110,9 @@ if(is_front_page()){
 		<?php if(is_front_page()){ ?>
             <div class="topBar hideOnMob">
                 <div class="site-branding">
-                    <a href="<?php bloginfo('url');?>"><img src="<?php echo get_template_directory_uri() ; ?>/img/bf-logo-blue.svg" width="223" alt="<?php bloginfo( 'name' ); ?>" title="<?php bloginfo( 'name' ); ?>" /></a>
+                    <a href="<?php echo home_url(); ?>">
+                        <img src="<?php echo get_template_directory_uri() ; ?>/img/bf-logo-blue.svg" width="223" alt="<?php bloginfo( 'name' ); ?>" title="<?php bloginfo( 'name' ); ?>" />
+                    </a>
                 </div>
                 
                 <div class="menuContainer">
