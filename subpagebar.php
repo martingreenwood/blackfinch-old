@@ -71,7 +71,7 @@
             </div>
             
             <div class="smallSearchContain">
-                <form method="get" action="<?php echo echo home_url( "/" ); ?>">
+                <form method="get" action="<?php echo home_url( "/" ); ?>">
                     <input type="text" placeholder="Search" class="" value="" name="s" />
                 </form>
             </div> 
