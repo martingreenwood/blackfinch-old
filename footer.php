@@ -45,6 +45,7 @@
             	<div class="col s2">
                 	<p><a href="<?php echo home_url( "/news" ); ?>">News</a></p>
                     <p><a href="<?php echo home_url( "/events" ); ?>">Events</a></p>
+                    <p><a href="<?php echo home_url( "/careers" ); ?>">Careers</a></p>
                 </div>  
        		</div>
 
