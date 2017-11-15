@@ -506,17 +506,18 @@ textarea {
 ## Links
 --------------------------------------------------------------*/
 a {
-	color: royalblue;
+	color: #3d4866;
 }
 
 a:visited {
-	color: purple;
+	color: #3d4866;
 }
 
 a:hover,
 a:focus,
 a:active {
-	color: midnightblue;
+	color: #3d4866;
+	text-decoration: underline;
 }
 
 a:focus {
@@ -967,8 +968,8 @@ body{
 	max-width: 1040px;
 }
 
-.home .menuWrapper {
-	// z-index: 999999999999;
+.menuWrapper {
+	z-index: 999999999999;
 }
 
 .menuDrop{
@@ -986,6 +987,11 @@ body{
 	letter-spacing:1px;
 	z-index:100000000;
 }
+
+.mainNav {
+	margin: 0;
+}
+
 
 .smallBurger:hover, .smallBurger.open {
 	cursor:pointer;
@@ -1161,6 +1167,17 @@ span.wpcf7-not-valid-tip{
 	//height:75px !important;	
 }
 
+.emailIcon,
+.emailIcon2 {
+	background-color: #3d4754;
+	overflow:hidden;
+}
+.emailIcon img,
+.emailIcon2 img {
+	width: 50px;
+	margin: 13px;
+}
+
 .searchForm{
 	position:absolute;
 	top:0;
@@ -1309,8 +1326,8 @@ span.wpcf7-not-valid-tip{
 
 .subPageBarContain {
 	position:fixed;
-	// max-width: 1040px;
-	max-width: 780px;
+	max-width: 1040px;
+	// max-width: 780px;
 	z-index:99999999;
 	top: 0;
 }
@@ -1433,6 +1450,11 @@ input:focus{
 	letter-spacing:1px;
 }
 
+.subscribeForm span.wpcf7-form-control-wrap.your-email {
+	float: left;
+	width: 97%;
+}
+
 .subscribeForm input[type=submit]{
 	font-family: 'Montserrat', sans-serif;
 	background:#3e4854;
@@ -1452,7 +1474,9 @@ input:focus{
 	height:100%;
 }
 
-
+.vc_custom_1495183232210 {
+	padding: 0 190px;
+}
 
 .error-404{
 	padding:25px;
@@ -1463,8 +1487,15 @@ input:focus{
 }
 
 .entry-content li{
-	list-style:circle !important;
-	margin:0 0 10px 0;
+	list-style: none !important;
+	margin: 0 0 10px 0;
+	position: relative;
+}
+
+.entry-content li:before {
+	content: "-";
+	position: absolute;
+	margin-left: -10px;
 }
 
 .entry-content a{
@@ -1508,15 +1539,15 @@ input:focus{
 }
 
 h1.adaptgreen, .adaptgreen{
-	color:#7EC7CA;
+	color:#8eced1 !important;
 }
 
 h1.evolvepurple, .evolvepurple{
-	color:#5C2D50;
+	color:#5b2c50 !important;
 }
 
 h1.thriveorange, .thriveorange{
-	color:#E06910;
+	color:#df690f !important;
 }
 
 
@@ -1565,9 +1596,13 @@ h1.thriveorange, .thriveorange{
 }
 
 .literature h3.blue{
-	background:#3E4854 !important;	
+	background:#3d4866 !important;	
 }
 
+
+.entry-content a {
+	text-transform: capitalize;
+}
 
 .entry-content h2{
 	font-family: 'Maitree', serif;
@@ -1612,6 +1647,12 @@ h1.thriveorange, .thriveorange{
 	letter-spacing:1px;
 	text-transform:uppercase;
 	margin-bottom:50px !important;
+}
+
+@media sceen and (max-width: 640px) {
+	.entry-content h4, .termsOverlay h4{
+		line-height: 1.5;
+	}
 }
 
 .termsOverlay{
@@ -1674,13 +1715,16 @@ h1.thriveorange, .thriveorange{
 }
 
 .site-info a:hover{
-	opacity:0.5;
-}
+	opacity:0.5g}
 
 .site-info p{
 	font-size:10px;
 	font-weight:100;
-	margin:5px 0;
+	margin:0 0 10px 0;
+}
+
+.site-info .col p:last-of-type {
+	margin-bottom: 0;
 }
 
 .site-info h3{
@@ -2014,6 +2058,11 @@ p.contained80{
 	padding:25px;
 }
 
+.SinglePost .entry-content p {
+	line-height: 1.5;
+}
+
+}
 .singlePost h1, .singlePost h2, .singlePost h3, .singlePost h4{
 	text-align:center;
 }
@@ -2342,6 +2391,9 @@ a, .contactPage input[type=button], .contactPage input[type=submit], .menuDrop1,
 	*/
 }
 
+.page-contact-us .nobg .entry-content {
+	margin-top: 0;
+}
 
 
 .page-products .site-info, 
@@ -2405,8 +2457,7 @@ a, .contactPage input[type=button], .contactPage input[type=submit], .menuDrop1,
 	
 	.infobar img{
 		//height:auto !important;
-	}
-	
+	}	
 	
 	
     . {

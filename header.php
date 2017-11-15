@@ -155,7 +155,7 @@ if(is_front_page()){
     	<div class="infobar row homeBar">
 			<div class="searchBar">
             	<div class="phoneIcon"><img class="" src="<?php echo get_template_directory_uri() ; ?>/img/phone.jpg"></div>
-                <div class="emailIcon2"><a href="<?php echo home_url("/contact"); ?>"><img class="" src="<?php echo get_template_directory_uri() ; ?>/img/email.jpg"></a></div>
+                <div class="emailIcon2"><a href="<?php echo home_url("/contact"); ?>"><img class="" src="<?php echo get_template_directory_uri() ; ?>/img/email.svg"></a></div>
                 
                 <form class="searchForm" method="get" action="<?php echo home_url( "/"); ?>">
 				<input type="text" placeholder="Search" class="searchExpand" value="" name="s" />
@@ -168,7 +168,7 @@ if(is_front_page()){
             </div>
             
             <div class="searchIcon"><img class="" src="<?php echo get_template_directory_uri() ; ?>/img/search.jpg"></div> 
-            <div class="emailIcon"><a href="<?php echo home_url("/contact"); ?>"><img class="" src="<?php echo get_template_directory_uri() ; ?>/img/email.jpg"></a></div>
+            <div class="emailIcon"><a href="<?php echo home_url("/contact"); ?>"><img class="" src="<?php echo get_template_directory_uri() ; ?>/img/email.svg"></a></div>
         </div>
 	<?php } ?>
     

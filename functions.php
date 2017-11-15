@@ -169,11 +169,14 @@ function bf_custom_post_types() {
 				'singular_name' => __( 'Case Study' )
 			),
 			'public' => true,
+			'taxonomies'  => array( 'category' ),
 			'has_archive' => true,
 			'menu_icon'   => 'dashicons-format-status',
         	'supports'    => array( 'title', 'editor', 'thumbnail', 'revisions' ),
 		)
 	);
+
+
 }
 add_action( 'init', 'bf_custom_post_types' );
 

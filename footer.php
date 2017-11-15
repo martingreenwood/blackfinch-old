@@ -19,8 +19,8 @@
             
             <div class="row">
         		<div class="col s5">
-                	<p><?php bloginfo( 'name' ); ?></p>
-                    <p><?php the_field( 'address', 'options' ); ?></p>
+                	<p><?php bloginfo( 'name' ); ?><br>
+                    <?php the_field( 'address', 'options' ); ?></p>
                     <p>Blackfinch Investments Ltd is authorised and regulated by the Financial Conduct Authority.</p>
                 </div>
             	<div class="col s3">
