@@ -370,6 +370,7 @@ function get_news(){
 
 		if ($nc / 3 === 1)
 			echo '</div><div class="singlePostMain">';
+			$nc = 0;
 
 	 ?>
 
