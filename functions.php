@@ -335,7 +335,7 @@ function get_news(){
 	ob_start();
 	
 	global $post;
-	$nc = 0;
+	$nc = 1;
 	$args = array( 'posts_per_page' => 9,  );
 	
 	$myposts = get_posts( $args );
@@ -343,7 +343,7 @@ function get_news(){
 	
 	echo '<div class="singlePostMain">';
 	
-	foreach ( $myposts as $post ) : setup_postdata( $post ); $nc++;
+	foreach ( $myposts as $post ) : setup_postdata( $post );
 		if (has_post_thumbnail(  )) {
 			$img = get_the_post_thumbnail_url();
 		} else {
@@ -368,9 +368,10 @@ function get_news(){
 					</div>
 				</div></div></div>';
 
-		if ($nc / 3 === 1)
-			echo '</div><div class="singlePostMain">';
-			$nc = 0;
+		// if multiple of 3 close div and open a new div
+		if($nc % 3 == 0) {echo '</div><div class="singlePostMain">';}
+
+		$nc++;
 
 	 ?>
 
