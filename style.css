@@ -2094,9 +2094,10 @@ p.contained80{
 }
 
 .singlePostMain{
+	float: left;
 	display:block;
 	width:100%;
-	padding:15px;
+	padding: 0 15px;
 }
 
 .singlePostContain .vc_column-inner {
