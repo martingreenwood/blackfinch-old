@@ -2128,8 +2128,9 @@ p.contained80{
 }
 
 .singlePostTitle{
-	background:#fff;
-	padding:25px;
+	background: #fff;
+	padding: 15px;
+	min-height: 114px;
 }
 
 
