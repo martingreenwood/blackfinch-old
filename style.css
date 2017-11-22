@@ -1584,9 +1584,6 @@ h1.evolvepurple, .evolvepurple{
 h1.thriveorange, .thriveorange{
 	color:#df690f !important;
 }
-.orange {
-	background-color: #df690f !important;
-}
 
 
 .literature h3{
@@ -1625,6 +1622,10 @@ h1.thriveorange, .thriveorange{
 	
 }
 
+.literature h3 {
+	min-height: 91px;
+}
+
 .literature h3.green{
 	background:#7EC7CA !important;	
 }
@@ -1636,6 +1637,12 @@ h1.thriveorange, .thriveorange{
 .literature h3.blue{
 	background:#3d4866 !important;	
 }
+
+.literature h3.orange{
+	background:#df690f !important;	
+}
+
+
 
 .wpb_button, .wpb_content_element, ul.wpb_thumbnails-fluid>li {
 }
