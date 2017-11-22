@@ -1555,7 +1555,7 @@ input:focus{
 	font-size:14px;
 }
 
-.entry-content p, .termsOverlay p{
+.entry-content p, .termsOverlay p, .entry-content ul, .termsOverlay iul 
 	font-family: 'Libre Franklin', sans-serif;
 	font-size:16px;
 }
