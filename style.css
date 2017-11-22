@@ -1499,8 +1499,8 @@ input:focus{
 }
 
 .page-about .entry-content .vc_column-inner,
-.single-post .entry-content .vc_column-inner,
-.single-event .entry-content .vc_column-inner,
+.single-post .entry-content,
+.single-event .entry-content,
 .vc_custom_1496228730165 .vc_column-inner,
 .vc_custom_1495184570168 .vc_column-inner,
 .vc_custom_1495184570168 .vc_column-inner,
