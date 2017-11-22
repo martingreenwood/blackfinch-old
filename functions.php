@@ -541,7 +541,7 @@ function get_home_news(){
 	foreach ( $myposts as $post ) : setup_postdata( $post );
 		
 	
-		echo '<h2><a href="'.get_the_permalink($post->ID).'">'.$post->post_title.'</a></h2>';
+		echo '<h2>'.$post->post_title.'</h2>';
 		$excerpt = get_the_content();
 		$excerpt = preg_replace(" (\[.*?\])",'',$excerpt);
     	$excerpt = strip_shortcodes($excerpt);
@@ -549,7 +549,7 @@ function get_home_news(){
 		
 		echo '<p class="contained">'.substr($excerpt, 0, 100).'</p>';
 		
-		echo '<a class="underline" href="'.get_the_permalink($post->ID).'">Read</a>';
+		echo '<a class="underline" href="'.get_the_permalink($post->ID).'">Read More</a>';
 
 	
 	 ?>

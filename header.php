@@ -48,9 +48,6 @@ if(is_front_page()){
 	if($headerBg){
 		$header = 'noLogo';	
 	}
-	
-	
-	
 }
 
 ?>
@@ -154,7 +151,7 @@ if(is_front_page()){
 	<?php if(is_front_page()){ ?>
     	<div class="infobar row homeBar">
 			<div class="searchBar">
-            	<div class="phoneIcon"><img class="" src="<?php echo get_template_directory_uri() ; ?>/img/phone.jpg"></div>
+            	<div class="phoneIcon"><img class="" src="<?php echo get_template_directory_uri() ; ?>/img/phone.svg"></div>
                 <div class="emailIcon2"><a href="<?php echo home_url("/contact"); ?>"><img class="" src="<?php echo get_template_directory_uri() ; ?>/img/email.svg"></a></div>
                 
                 <form class="searchForm" method="get" action="<?php echo home_url( "/"); ?>">
@@ -167,7 +164,7 @@ if(is_front_page()){
             	<div class="phoneNumber">Call us on 01684 571 255</div>
             </div>
             
-            <div class="searchIcon"><img class="" src="<?php echo get_template_directory_uri() ; ?>/img/search.jpg"></div> 
+            <div class="searchIcon"><img class="" src="<?php echo get_template_directory_uri() ; ?>/img/search.svg"></div> 
             <div class="emailIcon"><a href="<?php echo home_url("/contact"); ?>"><img class="" src="<?php echo get_template_directory_uri() ; ?>/img/email.svg"></a></div>
         </div>
 	<?php } ?>

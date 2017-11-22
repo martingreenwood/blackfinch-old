@@ -221,7 +221,7 @@ function changeMenu(){
 		
 		
 		var src = $('.searchIcon img').attr('src');
-	    var newsrc = (src=='wp-content/themes/blackfinch/img/close.jpg') ? 'wp-content/themes/blackfinch/img/search.jpg' : 'wp-content/themes/blackfinch/img/close.jpg';
+	    var newsrc = (src=='wp-content/themes/blackfinch/img/close.svg') ? 'wp-content/themes/blackfinch/img/search.svg' : 'wp-content/themes/blackfinch/img/close.svg';
 	    $('.searchIcon img').attr('src', newsrc );
 
 		$('.searchBar').animate({width: 'toggle'}, 250);
