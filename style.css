@@ -1739,7 +1739,7 @@ h1.thriveorange, .thriveorange{
 }
 
 .site-info a:hover{
-	opacity:0.5g}
+	opacity:0.5}
 
 .site-info p{
 	font-size:10px;
@@ -2437,6 +2437,7 @@ a, .contactPage input[type=button], .contactPage input[type=submit], .menuDrop1,
 
 .page-products .site-info, 
 .page-careers .site-info, 
+.page-id-8 .site-info, 
 .page-our-people .site-info, 
 .page-evolve-media .site-info, 
 .page-evolve-asset-focused .site-info, 
