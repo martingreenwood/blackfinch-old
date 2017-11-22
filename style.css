@@ -2457,7 +2457,7 @@ a, .contactPage input[type=button], .contactPage input[type=submit], .menuDrop1,
 }
 
 
-.single .site-info, 
+.single .site-info, §
 .page-products .site-info, 
 .page-careers .site-info, 
 .page-id-8 .site-info, 
@@ -2483,10 +2483,16 @@ a, .contactPage input[type=button], .contactPage input[type=submit], .menuDrop1,
 
 @media screen and (max-width: 768px) {
 	
-
+	.slickme {
+		margin-top: 76px;
+	}
 	
 	#masthead{
-		min-height:300px;
+		min-height:0px;
+	}
+
+	.headerContent {
+		display: none;
 	}
 	
 	.headerContent h1{
@@ -2523,7 +2529,8 @@ a, .contactPage input[type=button], .contactPage input[type=submit], .menuDrop1,
 	}
 	
 	.infobar img{
-		//height:auto !important;
+		width: 40px;
+		margin: 18px;
 	}	
 	
 	
@@ -2552,9 +2559,12 @@ a, .contactPage input[type=button], .contactPage input[type=submit], .menuDrop1,
 		font-size:30px;
 	}
 	
-
-	
-	
+	.thriceHomeContain, .thriveHomeContain {
+		border-left: 0 !important;
+		border-top: 1px solid #9499a0 !important;
+		padding-left: 0 !important;
+		padding-top: 25px;
+	}
 	
 	.vc_custom_1496332556091{
 		padding-right:15px !important;
@@ -2611,6 +2621,24 @@ a, .contactPage input[type=button], .contactPage input[type=submit], .menuDrop1,
 	
 	.entry-content h2{
 		font-size:20px;
+	}
+
+	.entry-content h2 a {
+		font-size: inherit;
+	}
+
+	.subscribeForm span.wpcf7-form-control-wrap.your-email {
+		width: 100%;
+	}
+
+	.single .entry-content {
+		padding: 0  !important;
+	}
+
+	.vc_column_container>.vc_column-inner, 
+	body .vc_custom_1511350471470  {
+		padding-left: 15px !important;
+		padding-right: 15px !important;
 	}
 	
 	.entry-content{

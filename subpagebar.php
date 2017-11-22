@@ -53,7 +53,7 @@
     <div class="subPageBarContain">
         <div class="infobar row subPageBar">
             <div class="searchBar">
-                <div class="phoneIcon"><img class="" src="<?php echo get_template_directory_uri(); ?>/img/phone.jpg" /></div>
+                <div class="phoneIcon"><img class="" src="<?php echo get_template_directory_uri(); ?>/img/phone.svg" /></div>
                 <div class="emailIcon2"><a href="<?php echo home_url("/contact"); ?>"><img class="" src="<?php echo get_template_directory_uri(); ?>/img/email.svg" /></a></div>
 
                 <form method="get" action="<?php echo home_url( "/" ); ?>">
@@ -63,12 +63,13 @@
             </div>
 
             <div class="smallMenu">
-                <div class="smallHome"><a href="<?php echo home_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/home.jpg" /></a></div>
-                <div class="smallPhone"><a href="tel:01684 571 255"><img class="" src="<?php echo get_template_directory_uri(); ?>/img/phone.jpg" /></a></div>
+                <div class="smallHome"><a href="<?php echo home_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/bf-icon-white.svg" /></a></div>
+                <div class="smallPhone"><a href="tel:01684 571 255"><img class="" src="<?php echo get_template_directory_uri(); ?>/img/phone.svg" /></a></div>
                 <div class="smallEmail"><a href="<?php echo home_url("/contact"); ?>"><img class="" src="<?php echo get_template_directory_uri(); ?>/img/email.svg" /></a></div>
-                <div class="smallSearch"><img class="" src="<?php echo get_template_directory_uri(); ?>/img/search.jpg" /></div> 
-                <div class="smallBurger"><img class="" src="<?php echo get_template_directory_uri(); ?>/img/menu.jpg" /></div>
+                <div class="smallSearch"><img class="" src="<?php echo get_template_directory_uri(); ?>/img/search.svg" /></div> 
+                <div class="smallBurger"><img class="" src="<?php echo get_template_directory_uri(); ?>/img/menu.svg" /></div>
             </div>
+
             
             <div class="smallSearchContain">
                 <form method="get" action="<?php echo home_url( "/" ); ?>">
@@ -77,6 +78,11 @@
             </div> 
         </div>
     </div>
+
+    <div class="menuChildren">
+                <?php wp_nav_menu( array( 'theme_location' => 'menu-1', 'menu_id' => 'primary-menu1' ) ); ?>
+            </div> 
+            
 
     <div class="headerContent">
         <?php echo $headerContent; ?> 
