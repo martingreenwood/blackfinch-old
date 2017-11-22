@@ -17,6 +17,7 @@
 		<h4>
 			<?php the_field( 'sector'); ?>
 		</h4>
+		<br><hr>
 			
 		<?php 
 		
