@@ -1527,9 +1527,10 @@ input:focus{
 }
 
 .entry-content li:before {
-	content: "-";
+	content: " —";
 	position: absolute;
-	margin-left: -10px;
+	margin-left: -20px;
+	margin-top: -2px;
 }
 
 .entry-content a{
