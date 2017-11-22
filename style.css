@@ -1498,9 +1498,12 @@ input:focus{
 	margin-top:75px;
 }
 
+.single .entry-content {
+	padding: 0 150px !important;	
+}
+
 .page-about .entry-content .vc_column-inner,
 .single-post .entry-content,
-.single .entry-content,
 .single-event .entry-content,
 .vc_custom_1496228730165 .vc_column-inner,
 .vc_custom_1495184570168 .vc_column-inner,
@@ -1509,7 +1512,7 @@ input:focus{
 .vc_custom_1495448263506 .vc_column-inner,
 .vc_custom_1507636764559 .vc_column-inner,
 {
-	padding: 0 100px !important;
+	padding: 0 150px !important;
 }
 
 
