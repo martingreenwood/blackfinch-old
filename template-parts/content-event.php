@@ -18,6 +18,7 @@
 			<?php echo date( "dS F Y", strtotime(get_field( 'event_date' ))) ?> <?php the_field( 'event_time'); ?><br>
 			<span class="greytext"><?php the_field( 'event_venue'); ?></span>
 		</h4>
+		<br><hr>
 			
 		<?php 
 		
