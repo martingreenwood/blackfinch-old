@@ -17,6 +17,11 @@
 			the_title( '<h3>', '</h3>' );
 		
 			echo '<h4>'.get_the_author_meta('display_name', $author_id).'</h4>';
+
+			?>
+			<br>
+			<hr>
+			<?php
 			
 			// $images = get_field('images');
 			// foreach( $images as $image ){
