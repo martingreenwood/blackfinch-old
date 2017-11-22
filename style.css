@@ -1484,7 +1484,7 @@ input:focus{
 }
 
 .vc_custom_1495183232210 {
-	padding: 0 190px;
+	// padding: 0 190px;
 }
 
 .error-404{
@@ -1902,6 +1902,7 @@ p.contained80{
 .vc_btn3-container a:hover {
 	opacity: 1;
 	background-color: #A3BBBD !important;
+	background-image: none;
 }
 
 .vc_btn3-container.vc_btn3-center .vc_btn3-block.vc_btn3-size-md{
