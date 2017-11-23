@@ -77,6 +77,15 @@ function changeMenu(){
 =============================*/
 
 (function($){
+	$(".termsOverlay input[type='radio']").click(function(){
+	    var radioValue = $("input[name='radio-270']:checked").val();
+	    if(radioValue){
+	        alert("Your are a - " + radioValue);
+	    }
+	});
+})(jQuery);
+
+(function($){
 	$('.menuContainer').click(function() {
 		$(this).addClass('menuOpen');
 	  	$('.menuChildren').slideToggle( 250 );

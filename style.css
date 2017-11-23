@@ -1700,12 +1700,12 @@ h1.thriveorange, .thriveorange{
 }
 
 .termsOverlay{
-	height:100%;
-	width:100%;
-	position:relative;
-	z-index:99999;
-	background:rgba(207,215,216,0.8);
-	padding:25px;
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	z-index: 9999999999;
+	background: rgba(207,215,216,0.8);
+	padding: 25px;
 }
 
 .termsOverlayContent{

@@ -73,13 +73,13 @@ if(is_front_page()){
             <span class="wpcf7-form-control wpcf7-radio">
             <span class="wpcf7-list-item first">
             <label>
-            <input type="radio" name="radio-270" value="EXCELLENT">
+            <input type="radio" name="radio-270" value="intermediary">
             <span class="wpcf7-list-item-label">intermediary</span>
             </label>
             
             </span><span class="wpcf7-list-item">
             <label>
-            <input type="radio" name="radio-270" value="GOOD">
+            <input type="radio" name="radio-270" value="investor">
             <span class="wpcf7-list-item-label">investor</span>
             </label></span>
             
