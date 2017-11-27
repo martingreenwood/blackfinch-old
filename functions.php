@@ -336,50 +336,62 @@ function get_news(){
 	
 	global $post;
 	$nc = 1;
-	$args = array( 'posts_per_page' => 9,  );
-	
-	$myposts = get_posts( $args );
-	
-	
-	echo '<div class="singlePostMain">';
-	
-	foreach ( $myposts as $post ) : setup_postdata( $post );
-		if (has_post_thumbnail(  )) {
-			$img = get_the_post_thumbnail_url();
-		} else {
-			$img = get_template_directory_uri() . "/img/blog-hold.jpg";
-		}
-	
-		echo '<div class="wpb_column vc_column_container vc_col-sm-4 singlePostContain">
-			<div class="vc_column-inner ">
-				<div class="wpb_wrapper">
-					<div class="wpb_single_image wpb_content_element vc_align_center singlePostImage">
-						<figure class="wpb_wrapper vc_figure">
-							<div class="vc_single_image-wrapper vc_box_border_grey">
-								<a href="'.get_the_permalink($post->ID).'"><img width="213" height="213" src="'.$img.'" class="vc_single_image-img attachment-full" alt="" srcset="'.$img.' 213w, '.$img.' 150w" sizes="(max-width: 213px) 100vw, 213px"></a>
-							</div>
-						</figure>
-					</div>
+	$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+	$args = array( 'posts_per_page' => 9, 'paged' => $paged,'post_type' => 'post' );
+	$postslist = new WP_Query( $args );
 
-					<div class="wpb_text_column wpb_content_element singlePostTitle">
+	echo '<div class="singlePostMain">';
+
+	if ( $postslist->have_posts() ) :
+		while ( $postslist->have_posts() ) : $postslist->the_post(); 
+
+		echo '<div class="wpb_column vc_column_container vc_col-sm-4 singlePostContain">
+					<div class="vc_column-inner ">
 						<div class="wpb_wrapper">
-							<h4><a href="'.get_the_permalink($post->ID).'">'.$post->post_title.'<span>'.get_the_author_meta('display_name', $author_id).'</span></a></h4>
+							<div class="wpb_single_image wpb_content_element vc_align_center singlePostImage">
+								<figure class="wpb_wrapper vc_figure">
+									<div class="vc_single_image-wrapper vc_box_border_grey">
+										<a href="'.get_the_permalink().'">'.get_the_post_thumbnail().'</a>
+									</div>
+								</figure>
+							</div>
+
+							<div class="wpb_text_column wpb_content_element singlePostTitle">
+								<div class="wpb_wrapper">
+									<h4><a href="'.get_the_permalink().'">'.get_the_title( ).'<span>'.get_the_author_meta('display_name', $author_id).'</span></a></h4>
+								</div>
+							</div>
 						</div>
 					</div>
-				</div></div></div>';
+				</div>';
 
 		// if multiple of 3 close div and open a new div
 		if($nc % 3 == 0) {echo '</div><div class="singlePostMain">';}
 
 		$nc++;
 
-	 ?>
+		endwhile;  
 
-	<?php endforeach; 
+		echo '</div>';
+
+		echo '<div class="singlePostMain navi">';
+
+			echo '<div class="wpb_column vc_column_container vc_col-sm-6 singlePostContain">';
+				echo '<div class="vc_column-inner "><div class="wpb_wrapper" style="text-align: left;">';
+					next_posts_link( 'Older Entries', $postslist->max_num_pages );
+				echo '</div></div>';
+			echo '</div>';
+
+			echo '<div class="wpb_column vc_column_container vc_col-sm-6 singlePostContain">';
+				echo '<div class="vc_column-inner "><div class="wpb_wrapper" style="text-align: right;">';
+					previous_posts_link( 'Next Entries &raquo;' );
+				echo '</div></div>';
+			echo '</div>';
+
+		echo '</div>';
+
 	wp_reset_postdata();
-	
-	echo '</div>';
-
+	endif;
 
 	
 	return ob_get_clean();
@@ -389,57 +401,67 @@ add_shortcode( 'get_news', 'get_news' );
 
 function get_casestudies(){
 	ob_start();
-	
+
 	global $post;
-	$args = array( 
-		'post_type' 		=> 'case-study', 
-		'posts_per_page' 	=> 6,
-	);
-	
-	$myposts = get_posts( $args );
-	
-	
+	$nc = 1;
+	$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+	$args = array( 'posts_per_page' => 9, 'paged' => $paged,'post_type' => 'case-study' );
+	$postslist = new WP_Query( $args );
+
 	echo '<div class="singlePostMain">';
-	
-	foreach ( $myposts as $post ) : setup_postdata( $post );
-		if (has_post_thumbnail(  )) {
-			$img = get_the_post_thumbnail_url();
-		} else {
-			$img = get_template_directory_uri() . "/img/blog-hold.jpg";
-		}
-	
+
+	if ( $postslist->have_posts() ) :
+		while ( $postslist->have_posts() ) : $postslist->the_post(); 
+
 		echo '<div class="wpb_column vc_column_container vc_col-sm-4 singlePostContain">
-			<div class="vc_column-inner ">
-				<div class="wpb_wrapper">
-					<div class="wpb_single_image wpb_content_element vc_align_center singlePostImage">
-						<figure class="wpb_wrapper vc_figure">
-							<div class="vc_single_image-wrapper vc_box_border_grey">
-								<a href="'.get_the_permalink($post->ID).'"><img width="213" height="213" src="'.$img.'" class="vc_single_image-img attachment-full" alt="" srcset="'.$img.' 213w, '.$img.' 150w" sizes="(max-width: 213px) 100vw, 213px"></a>
+					<div class="vc_column-inner ">
+						<div class="wpb_wrapper">
+							<div class="wpb_single_image wpb_content_element vc_align_center singlePostImage">
+								<figure class="wpb_wrapper vc_figure">
+									<div class="vc_single_image-wrapper vc_box_border_grey">
+										<a href="'.get_the_permalink().'">'.get_the_post_thumbnail().'</a>
+									</div>
+								</figure>
 							</div>
-						</figure>
+
+							<div class="wpb_text_column wpb_content_element singlePostTitle">
+								<div class="wpb_wrapper">
+									<h4><a href="'.get_the_permalink().'">'.get_the_title( ).'<span>'.get_field('sector', $post->ID).'</span></a></h4>
+								</div>
+							</div>
+						</div>
 					</div>
+				</div>';
 
-	<div class="wpb_text_column wpb_content_element singlePostTitle">
-		<div class="wpb_wrapper">
-			<h4><a href="'.get_the_permalink($post->ID).'">'.$post->post_title.'<span>'.get_field('sector', $post->ID).'</span></a></h4>
+		// if multiple of 3 close div and open a new div
+		if($nc % 3 == 0) {echo '</div><div class="singlePostMain">';}
 
-		</div>
-	</div>
-</div></div></div>';
-	
-	
-	
-		
-	
-	 ?>
+		$nc++;
 
-	<?php endforeach; 
+		endwhile;  
+
+		echo '</div>';
+
+		echo '<div class="singlePostMain navi">';
+
+			echo '<div class="wpb_column vc_column_container vc_col-sm-6 singlePostContain">';
+				echo '<div class="vc_column-inner "><div class="wpb_wrapper" style="text-align: left;">';
+					next_posts_link( 'Older Entries', $postslist->max_num_pages );
+				echo '</div></div>';
+			echo '</div>';
+
+			echo '<div class="wpb_column vc_column_container vc_col-sm-6 singlePostContain">';
+				echo '<div class="vc_column-inner "><div class="wpb_wrapper" style="text-align: right;">';
+					previous_posts_link( 'Next Entries &raquo;' );
+				echo '</div></div>';
+			echo '</div>';
+
+		echo '</div>';
+
 	wp_reset_postdata();
-	
-	echo '</div>';
+	endif;
 
 
-	
 	return ob_get_clean();
 }
 
@@ -447,60 +469,74 @@ add_shortcode( 'get_casestudies', 'get_casestudies' );
 
 function get_events(){
 	ob_start();
-	
+
 	global $post;
+	$nc = 1;
+	$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
 	$args = array( 
 		'post_type' 		=> 'event', 
-		'posts_per_page' 	=> 6,
+		'paged' 			=> $paged,
+		'posts_per_page' 	=> 9,
 		'meta_key'			=> 'event_date',
 		'orderby'			=> 'meta_value',
 		'order'				=> 'ASC'
 	);
-	
-	$myposts = get_posts( $args );
-	
-	
+	$postslist = new WP_Query( $args );
+
 	echo '<div class="singlePostMain">';
-	
-	foreach ( $myposts as $post ) : setup_postdata( $post );
-		if (has_post_thumbnail(  )) {
-			$img = get_the_post_thumbnail_url();
-		} else {
-			$img = get_template_directory_uri() . "/img/blog-hold.jpg";
-		}
-	
+
+	if ( $postslist->have_posts() ) :
+		while ( $postslist->have_posts() ) : $postslist->the_post(); 
+
 		echo '<div class="wpb_column vc_column_container vc_col-sm-4 singlePostContain">
-			<div class="vc_column-inner ">
-				<div class="wpb_wrapper">
-					<div class="wpb_single_image wpb_content_element vc_align_center singlePostImage">
-						<figure class="wpb_wrapper vc_figure">
-							<div class="vc_single_image-wrapper vc_box_border_grey">
-								<a href="'.get_the_permalink($post->ID).'"><img width="213" height="213" src="'.$img.'" class="vc_single_image-img attachment-full" alt="" srcset="'.$img.' 213w, '.$img.' 150w" sizes="(max-width: 213px) 100vw, 213px"></a>
+					<div class="vc_column-inner ">
+						<div class="wpb_wrapper">
+							<div class="wpb_single_image wpb_content_element vc_align_center singlePostImage">
+								<figure class="wpb_wrapper vc_figure">
+									<div class="vc_single_image-wrapper vc_box_border_grey">
+										<a href="'.get_the_permalink().'">'.get_the_post_thumbnail().'</a>
+									</div>
+								</figure>
 							</div>
-						</figure>
+
+							<div class="wpb_text_column wpb_content_element singlePostTitle">
+								<div class="wpb_wrapper">
+									<h4><a href="'.get_the_permalink().'">'.get_the_title().'<span>'. date( "dS F Y", strtotime(get_field( 'event_date', $post->ID ))).'</span></a></h4>
+								</div>
+							</div>
+						</div>
 					</div>
+				</div>';
 
-	<div class="wpb_text_column wpb_content_element singlePostTitle">
-		<div class="wpb_wrapper">
-			<h4><a href="'.get_the_permalink($post->ID).'">'.$post->post_title.'<span>'. date( "dS F Y", strtotime(get_field( 'event_date', $post->ID ))).'</span></a></h4>
+		// if multiple of 3 close div and open a new div
+		if($nc % 3 == 0) {echo '</div><div class="singlePostMain">';}
 
-		</div>
-	</div>
-</div></div></div>';
-	
-	
-	
-		
-	
-	 ?>
+		$nc++;
 
-	<?php endforeach; 
+		endwhile;  
+
+		echo '</div>';
+
+		echo '<div class="singlePostMain navi">';
+
+			echo '<div class="wpb_column vc_column_container vc_col-sm-6 singlePostContain">';
+				echo '<div class="vc_column-inner "><div class="wpb_wrapper" style="text-align: left;">';
+					next_posts_link( 'Older Entries', $postslist->max_num_pages );
+				echo '</div></div>';
+			echo '</div>';
+
+			echo '<div class="wpb_column vc_column_container vc_col-sm-6 singlePostContain">';
+				echo '<div class="vc_column-inner "><div class="wpb_wrapper" style="text-align: right;">';
+					previous_posts_link( 'Next Entries &raquo;' );
+				echo '</div></div>';
+			echo '</div>';
+
+		echo '</div>';
+
 	wp_reset_postdata();
-	
-	echo '</div>';
+	endif;
 
 
-	
 	return ob_get_clean();
 }
 

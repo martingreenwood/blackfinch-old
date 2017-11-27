@@ -760,6 +760,14 @@ a:active {
 	margin: 0;
 }
 
+.sd-content ul li:before {
+	display: none;
+}
+
+.vc_tta-panel-body {
+	padding: 0 150px 30px 150px !important;
+}
+
 .byline,
 .updated:not(.published) {
 	display: none;
