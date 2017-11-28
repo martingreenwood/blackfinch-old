@@ -196,6 +196,7 @@ function get_adapt(){
 		'post_type'   => 'any', 
 		'numberposts' => -1,
 		'post_status' => 'publish', 
+		'order' => 'ASC',
 		'orderby' => 'menu_order'
 	);
 	$posts = get_children( $args );
@@ -244,6 +245,7 @@ function get_thrive(){
 		'post_type'   => 'any', 
 		'numberposts' => -1,
 		'orderby' => 'menu_order',
+		'order' => 'ASC',
 		'post_status' => 'publish' 
 	);
 	$posts = get_children( $args );
@@ -292,6 +294,7 @@ function get_evolve(){
 		'post_type'   => 'any', 
 		'numberposts' => -1,
 		'orderby' => 'menu_order',
+		'order' => 'ASC',
 		'post_status' => 'publish' 
 	);
 	$posts = get_children( $args );
