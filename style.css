@@ -2495,6 +2495,10 @@ a, .contactPage input[type=button], .contactPage input[type=submit], .menuDrop1,
 		padding-right: 0 !important;
 		padding-left: 0 !important;
 	}
+
+	.wpb_wrapper .vc_separator:last-of-type {
+		display: none;
+	}
 	
 	.slickme {
 		margin-top: 76px;
