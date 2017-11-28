@@ -2490,6 +2490,11 @@ a, .contactPage input[type=button], .contactPage input[type=submit], .menuDrop1,
 /* Media Queries */
 
 @media screen and (max-width: 768px) {
+
+	.vc_custom_1511350742154 {
+		padding-right: 0 !important;
+		padding-left: 0 !important;
+	}
 	
 	.slickme {
 		margin-top: 76px;
