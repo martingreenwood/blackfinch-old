@@ -110,6 +110,7 @@ function blackfinch_scripts() {
 	wp_enqueue_style( 'bf-slickthemecss', get_template_directory_uri() . '/slick/slick-theme.css' );
 
 	wp_enqueue_script( 'jQuery' );
+	wp_enqueue_script( 'bf-cookies', get_template_directory_uri() . '/js/jquery.cookie.js', array(), '20151215', true );
 	wp_enqueue_script( 'bf-slickjs', get_template_directory_uri() . '/slick/slick.min.js', array(), '20151215', true );
 	wp_enqueue_script( 'blackfinch-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 	wp_enqueue_script( 'blackfinch-app', get_template_directory_uri() . '/js/app.js', array(), '20151215', true );

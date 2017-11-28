@@ -83,8 +83,10 @@ function changeMenu(){
 (function($){
 	$(".termsOverlay input[type='radio']").click(function(){
 	    var radioValue = $("input[name='radio-270']:checked").val();
-	    if(radioValue){
-	        alert("Your are a - " + radioValue);
+	    if (radioValue == 'decline') {
+	    	window.location.replace("http://google.com");
+	    } else {
+	    	$.cookie("accept", 1, { expires : 30 });
 	    }
 	});
 })(jQuery);

@@ -55,41 +55,39 @@ if(is_front_page()){
 
 <body <?php body_class("page-" . $pagename); ?>>
 
-
-	<div class="termsOverlay" style="display:none;">
+    <?php 
+    if( !isset( $_COOKIE['accept'] ) && $_COOKIE['accept'] != 1 ):
+    ?>
+	<div class="termsOverlay">
     	<div class="termsOverlayContent">
-    		<h4>Terms &amp; Conditions</h4>
-        
-       		<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl.</p>
 
-			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl.</p>
+            <?php the_field( 'popuo_text', 'options' ); ?>
 
-			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl.</p>
-
-			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl.</p>
+            <p><a href="<?php echo home_url( 'terms-and-conditions' ) ?>">Terms &amp; Conditions</a> / <a href="<?php echo home_url( 'cookies-privacy' ) ?>">>Cookies &amp; Privacy / <a href="<?php echo home_url( 'important-information' ) ?>">Regulatory Disclosure</a></p>
             
             <div class="feedbackForm">
-            <span class="wpcf7-form-control-wrap radio-270">
-            <span class="wpcf7-form-control wpcf7-radio">
-            <span class="wpcf7-list-item first">
-            <label>
-            <input type="radio" name="radio-270" value="intermediary">
-            <span class="wpcf7-list-item-label">intermediary</span>
-            </label>
-            
-            </span><span class="wpcf7-list-item">
-            <label>
-            <input type="radio" name="radio-270" value="investor">
-            <span class="wpcf7-list-item-label">investor</span>
-            </label></span>
-            
-      </span></span>
+                <span class="wpcf7-form-control-wrap radio-270">
+                    <span class="wpcf7-form-control wpcf7-radio">
+                        <span class="wpcf7-list-item first">
+                            <label>
+                                <input type="radio" name="radio-270" value="accept">
+                                <span class="wpcf7-list-item-label">Accept</span>
+                            </label>
+                        </span>
+
+                        <span class="wpcf7-list-item">
+                            <label>
+                                <input type="radio" name="radio-270" value="decline">
+                                <span class="wpcf7-list-item-label">Decline</span>
+                            </label>
+                        </span>
+                    </span>
+                </span>
             </div>
-            
-            
-            
+
     	</div>
     </div>
+    <?php endif; ?>
 
 
 <div id="page" class="site wrap <?php echo $header.' '.$padding; if(!$headerBg && !is_page('contact')){ echo ' nobg'; } ?>">

@@ -4,6 +4,41 @@
     "fields": [
         {
             "key": "field_59d4a29081630",
+            "label": "Popup",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "left",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5a1d7ae040d7d",
+            "label": "Popup Text",
+            "name": "popuo_text",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "visual",
+            "toolbar": "full",
+            "media_upload": 0,
+            "delay": 0
+        },
+        {
+            "key": "field_5a1d7acd40d7c",
             "label": "Company Info",
             "name": "",
             "type": "tab",
@@ -23,7 +58,6 @@
             "label": "Address",
             "name": "address",
             "type": "text",
-            "value": null,
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -43,7 +77,6 @@
             "label": "Phone",
             "name": "phone",
             "type": "text",
-            "value": null,
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -63,7 +96,6 @@
             "label": "Fax",
             "name": "fax",
             "type": "text",
-            "value": null,
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -83,7 +115,6 @@
             "label": "email",
             "name": "email",
             "type": "text",
-            "value": null,
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -119,7 +150,6 @@
             "label": "Adapt Icon",
             "name": "adapt_icon",
             "type": "image",
-            "value": null,
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -138,33 +168,12 @@
             "max_height": "",
             "max_size": "",
             "mime_types": ""
-        },
-        {
-            "key": "field_59d4d09cead83",
-            "label": "Adapt Strapline",
-            "name": "adapt_strapline",
-            "type": "textarea",
-            "value": null,
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "maxlength": "",
-            "rows": 2,
-            "new_lines": "br"
         },
         {
             "key": "field_59d35eb9669f1",
             "label": "Evolve Icon",
             "name": "evolve_icon",
             "type": "image",
-            "value": null,
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -183,33 +192,12 @@
             "max_height": "",
             "max_size": "",
             "mime_types": ""
-        },
-        {
-            "key": "field_59d4d0b8ead84",
-            "label": "Evolve Strapline",
-            "name": "evolve_strapline",
-            "type": "textarea",
-            "value": null,
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "maxlength": "",
-            "rows": 2,
-            "new_lines": "br"
         },
         {
             "key": "field_59d35ec5669f2",
             "label": "Thrive Icon",
             "name": "thrive_icon",
             "type": "image",
-            "value": null,
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -228,26 +216,6 @@
             "max_height": "",
             "max_size": "",
             "mime_types": ""
-        },
-        {
-            "key": "field_59d4d0c7ead85",
-            "label": "Thrive Strapline",
-            "name": "thrive_strapline",
-            "type": "textarea",
-            "value": null,
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "maxlength": "",
-            "rows": 2,
-            "new_lines": "br"
         },
         {
             "key": "field_59d493282f2aa",
@@ -270,7 +238,6 @@
             "label": "LinkedIn URL",
             "name": "linkedin_url",
             "type": "url",
-            "value": null,
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -300,5 +267,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1507119328
+    "modified": 1511882320
 }
