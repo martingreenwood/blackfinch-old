@@ -58,12 +58,15 @@ if(is_front_page()){
     <?php 
     if( !isset( $_COOKIE['accept'] ) && $_COOKIE['accept'] != 1 ):
     ?>
+    <?php if ( is_page(8) || $post->post_parent == '8' ) {
+        # code...
+    } ?>
 	<div class="termsOverlay">
     	<div class="termsOverlayContent">
 
             <?php the_field( 'popuo_text', 'options' ); ?>
 
-            <p><a href="<?php echo home_url( 'terms-and-conditions' ) ?>">Terms &amp; Conditions</a> / <a href="<?php echo home_url( 'cookies-privacy' ) ?>">>Cookies &amp; Privacy / <a href="<?php echo home_url( 'important-information' ) ?>">Regulatory Disclosure</a></p>
+            <p><a href="<?php echo home_url( 'terms-and-conditions' ) ?>">Terms &amp; Conditions</a> / <a href="<?php echo home_url( 'cookies-privacy' ) ?>">Cookies &amp; Privacy / <a href="<?php echo home_url( 'important-information' ) ?>">Regulatory Disclosure</a></p>
             
             <div class="feedbackForm">
                 <span class="wpcf7-form-control-wrap radio-270">
