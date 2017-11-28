@@ -7,7 +7,7 @@
 function resizeIframe(obj) {
     obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
   }
-  
+
 function changeMenu(){
 	$ = jQuery;
 	var offset = $("#masthead").offset();
@@ -100,6 +100,10 @@ function changeMenu(){
 	$('.smallBurger').click(function() {
 		$(this).addClass('menuOpen');
 		$('.menuChildren').slideToggle( 250 );
+
+		var src = $('.smallBurger img').attr('src');
+	    var newsrc = (src=='wp-content/themes/blackfinch/img/close.svg') ? 'wp-content/themes/blackfinch/img/menu.svg' : 'wp-content/themes/blackfinch/img/close.svg';
+	    $('.smallBurger img').attr('src', newsrc );
 	});
 })(jQuery);
 
