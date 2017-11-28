@@ -58,9 +58,7 @@ if(is_front_page()){
     <?php 
     if( !isset( $_COOKIE['accept'] ) && $_COOKIE['accept'] != 1 ):
     ?>
-    <?php if ( is_page(8) || $post->post_parent == '8' ) {
-        # code...
-    } ?>
+    <?php if ( is_page(8) || $post->post_parent == '8' ): ?>
 	<div class="termsOverlay">
     	<div class="termsOverlayContent">
 
@@ -90,6 +88,7 @@ if(is_front_page()){
 
     	</div>
     </div>
+    <?php endif; ?>
     <?php endif; ?>
 
 
