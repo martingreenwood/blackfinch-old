@@ -38,7 +38,7 @@
 
                 </div>
             	<div class="col s2">
-                	<p><a href="<?php echo home_url( "/terms-and-conditions" ); ?>">Terms and Conditions</a></p>
+                	<p><a href="<?php echo home_url( "/terms-and-conditions" ); ?>">Terms &amp; Conditions</a></p>
                     <p><a href="<?php echo home_url( "/cookies-privacy" ) ;?>">Cookies &amp; Privacy</a></p>
                     <p><a href="<?php echo home_url( "/important-information" ) ;?>">Important Information</a></p>
                 </div>

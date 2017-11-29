@@ -385,7 +385,7 @@ function get_news(){
 
 			echo '<div class="wpb_column vc_column_container vc_col-sm-6 singlePostContain">';
 				echo '<div class="vc_column-inner "><div class="wpb_wrapper" style="text-align: left;">';
-					next_posts_link( 'Older Entries', $postslist->max_num_pages );
+					next_posts_link( 'Previous Entries', $postslist->max_num_pages );
 				echo '</div></div>';
 			echo '</div>';
 
@@ -453,7 +453,7 @@ function get_casestudies(){
 
 			echo '<div class="wpb_column vc_column_container vc_col-sm-6 singlePostContain">';
 				echo '<div class="vc_column-inner "><div class="wpb_wrapper" style="text-align: left;">';
-					next_posts_link( 'Older Entries', $postslist->max_num_pages );
+					next_posts_link( 'Previous Entries', $postslist->max_num_pages );
 				echo '</div></div>';
 			echo '</div>';
 
@@ -508,7 +508,7 @@ function get_events(){
 
 							<div class="wpb_text_column wpb_content_element singlePostTitle">
 								<div class="wpb_wrapper">
-									<h4><a href="'.get_the_permalink().'">'.get_the_title().'<span>'. date( "dS F Y", strtotime(get_field( 'event_date', $post->ID ))).'</span></a></h4>
+									<h4><a href="'.get_the_permalink().'">'.get_the_title().'<span>'. date( "jS F Y", strtotime(get_field( 'event_date', $post->ID ))).'</span></a></h4>
 								</div>
 							</div>
 						</div>
@@ -528,7 +528,7 @@ function get_events(){
 
 			echo '<div class="wpb_column vc_column_container vc_col-sm-6 singlePostContain">';
 				echo '<div class="vc_column-inner "><div class="wpb_wrapper" style="text-align: left;">';
-					next_posts_link( 'Older Entries', $postslist->max_num_pages );
+					next_posts_link( 'Previous Entries', $postslist->max_num_pages );
 				echo '</div></div>';
 			echo '</div>';
 

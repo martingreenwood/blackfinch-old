@@ -826,6 +826,10 @@ a:active {
 	padding: 0;
 }
 
+.sd-social-icon .sd-content ul li[class*='share-'].share-linkedin a.sd-button {
+	background: #000;
+}
+
 /* Make sure embeds and iframes fit their containers. */
 embed,
 iframe,
@@ -979,7 +983,7 @@ body{
 }
 
 .menuWrapper {
-	z-index: 999;
+	z-index: 9999999;
 }
 
 .menuDrop{
