@@ -87,9 +87,7 @@ function changeMenu(){
 	    	window.location.replace("http://google.com");
 	    } else {
 	    	$.cookie("accept", 1, { expires : 30 });
-	    	$(".termsOverlay").hide('fast', function() {
-
-	    	});
+	    	$(".termsOverlay").fadeOut('fast');
 	    }
 	});
 })(jQuery);
