@@ -50,7 +50,7 @@
        		</div>
 
        		<div class="linkedin">
-	       		<a href="<?php the_field( 'linkedin_url' ); ?>" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/linkedin.svg" width="40" height="40"></a>
+	       		<a href="<?php the_field( 'linkedin_url', 'option' ); ?>" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/linkedin.svg" width="40" height="40"></a>
        		</div>
             
         </div>
