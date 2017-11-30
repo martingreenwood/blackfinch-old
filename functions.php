@@ -385,13 +385,13 @@ function get_news(){
 
 			echo '<div class="wpb_column vc_column_container vc_col-sm-6 singlePostContain">';
 				echo '<div class="vc_column-inner "><div class="wpb_wrapper" style="text-align: left;">';
-					next_posts_link( 'Previous Entries', $postslist->max_num_pages );
+					previous_posts_link( 'Next Entries &raquo;' );
 				echo '</div></div>';
 			echo '</div>';
 
 			echo '<div class="wpb_column vc_column_container vc_col-sm-6 singlePostContain">';
 				echo '<div class="vc_column-inner "><div class="wpb_wrapper" style="text-align: right;">';
-					previous_posts_link( 'Next Entries &raquo;' );
+					next_posts_link( 'Previous Entries', $postslist->max_num_pages );
 				echo '</div></div>';
 			echo '</div>';
 
@@ -453,15 +453,17 @@ function get_casestudies(){
 
 			echo '<div class="wpb_column vc_column_container vc_col-sm-6 singlePostContain">';
 				echo '<div class="vc_column-inner "><div class="wpb_wrapper" style="text-align: left;">';
-					next_posts_link( 'Previous Entries', $postslist->max_num_pages );
+					previous_posts_link( 'Next Entries &raquo;' );
 				echo '</div></div>';
 			echo '</div>';
 
 			echo '<div class="wpb_column vc_column_container vc_col-sm-6 singlePostContain">';
 				echo '<div class="vc_column-inner "><div class="wpb_wrapper" style="text-align: right;">';
-					previous_posts_link( 'Next Entries &raquo;' );
+					next_posts_link( 'Previous Entries', $postslist->max_num_pages );
 				echo '</div></div>';
 			echo '</div>';
+
+			
 
 		echo '</div>';
 
@@ -528,13 +530,13 @@ function get_events(){
 
 			echo '<div class="wpb_column vc_column_container vc_col-sm-6 singlePostContain">';
 				echo '<div class="vc_column-inner "><div class="wpb_wrapper" style="text-align: left;">';
-					next_posts_link( 'Previous Entries', $postslist->max_num_pages );
+					previous_posts_link( 'Next Entries &raquo;' );
 				echo '</div></div>';
 			echo '</div>';
 
 			echo '<div class="wpb_column vc_column_container vc_col-sm-6 singlePostContain">';
 				echo '<div class="vc_column-inner "><div class="wpb_wrapper" style="text-align: right;">';
-					previous_posts_link( 'Next Entries &raquo;' );
+					next_posts_link( 'Previous Entries', $postslist->max_num_pages );
 				echo '</div></div>';
 			echo '</div>';
 
