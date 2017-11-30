@@ -530,13 +530,13 @@ function get_events(){
 
 			echo '<div class="wpb_column vc_column_container vc_col-sm-6 singlePostContain">';
 				echo '<div class="vc_column-inner "><div class="wpb_wrapper" style="text-align: left;">';
-					previous_posts_link( 'Next Entries' );
+					previous_posts_link( 'Earlier Entries' );
 				echo '</div></div>';
 			echo '</div>';
 
 			echo '<div class="wpb_column vc_column_container vc_col-sm-6 singlePostContain">';
 				echo '<div class="vc_column-inner "><div class="wpb_wrapper" style="text-align: right;">';
-					next_posts_link( 'Previous Entries', $postslist->max_num_pages );
+					next_posts_link( 'Later Events', $postslist->max_num_pages );
 				echo '</div></div>';
 			echo '</div>';
 
