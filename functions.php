@@ -385,7 +385,7 @@ function get_news(){
 
 			echo '<div class="wpb_column vc_column_container vc_col-sm-6 singlePostContain">';
 				echo '<div class="vc_column-inner "><div class="wpb_wrapper" style="text-align: left;">';
-					previous_posts_link( 'Next Entries &raquo;' );
+					previous_posts_link( 'Next Entries' );
 				echo '</div></div>';
 			echo '</div>';
 
@@ -453,7 +453,7 @@ function get_casestudies(){
 
 			echo '<div class="wpb_column vc_column_container vc_col-sm-6 singlePostContain">';
 				echo '<div class="vc_column-inner "><div class="wpb_wrapper" style="text-align: left;">';
-					previous_posts_link( 'Next Entries &raquo;' );
+					previous_posts_link( 'Next Entries' );
 				echo '</div></div>';
 			echo '</div>';
 
@@ -530,7 +530,7 @@ function get_events(){
 
 			echo '<div class="wpb_column vc_column_container vc_col-sm-6 singlePostContain">';
 				echo '<div class="vc_column-inner "><div class="wpb_wrapper" style="text-align: left;">';
-					previous_posts_link( 'Next Entries &raquo;' );
+					previous_posts_link( 'Next Entries' );
 				echo '</div></div>';
 			echo '</div>';
 
