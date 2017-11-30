@@ -161,7 +161,7 @@ if(is_front_page()){
             </div>
             
             <div class="phoneWrap">
-            	<div class="phoneNumber">Call us on 01684 571 255</div>
+            	<div class="phoneNumber">Call us on <a href="tel:01684571255">01684 571 255</a></div>
             </div>
             
             <div class="searchIcon"><img class="" src="<?php echo get_template_directory_uri() ; ?>/img/search.svg"></div> 

@@ -25,7 +25,7 @@
                 </div>
             	<div class="col s3">
             		<?php if (get_field( 'phone', 'options' )): ?>
-                	<p>T <?php the_field( 'phone', 'options' ); ?></p>
+                	<p>T <a href="tel:01684571255"><?php the_field( 'phone', 'options' ); ?></a></p>
                 	<?php endif; ?>
                     
                     <?php if (get_field( 'fax', 'options' )): ?>
@@ -33,7 +33,7 @@
 					<?php endif; ?>
                     
                     <?php if (get_field( 'email', 'options' )): ?>
-                    <p>E <?php the_field( 'email', 'options' ); ?></p>
+                    <p>E <a href="mailto:<?php the_field( 'email', 'options' ); ?>"><?php the_field( 'email', 'options' ); ?></a></p>
                     <?php endif; ?>
 
                 </div>
