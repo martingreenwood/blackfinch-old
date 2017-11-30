@@ -62,7 +62,7 @@ if(is_front_page()){
 	<div class="termsOverlay">
     	<div class="termsOverlayContent">
 
-            <?php the_field( 'popuo_text', 'option' ); ?>
+            <?php the_field( 'popuo_text', 'options' ); ?>
 
             <p><a href="<?php echo home_url( 'terms-and-conditions' ) ?>">Terms &amp; Conditions</a> / <a href="<?php echo home_url( 'cookies-privacy' ) ?>">Cookies &amp; Privacy / <a href="<?php echo home_url( 'important-information' ) ?>">Regulatory Disclosure</a></p>
             
