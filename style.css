@@ -2496,6 +2496,22 @@ a, .contactPage input[type=button], .contactPage input[type=submit], .menuDrop1,
 
 @media screen and (max-width: 768px) {
 
+	.termsOverlayContent {
+		height: auto;
+		width: 100%;
+		padding: 30px;
+	}
+
+	.termsOverlay {
+		height: 100vh;
+	}
+
+	.termsOverlay .info {
+		height: 320px;
+		overflow: scroll;
+		margin-bottom: 20px;
+	}
+
 	.page .vc_custom_1511350742154,
 	.page .vc_custom_1511355360728,
 	.page .vc_custom_1511537962712, 
