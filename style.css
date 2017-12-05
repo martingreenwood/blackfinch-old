@@ -1060,7 +1060,7 @@ body{
 .ie .wpcf7-form input[type=text], 
 .ie .wpcf7-form input[type=email], 
 .ie .wpcf7-form textarea {
-	padding: 0;
+	padding: 0 20px;
 }
 
 .wpcf7-form input[type=submit]{
