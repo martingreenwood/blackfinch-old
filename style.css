@@ -231,6 +231,7 @@ input[type="search"]::-webkit-search-decoration {
 input, textarea { color: #CCCCCC; }
 .placeholder { color: #CCCCCC; }
 
+
 fieldset {
 	border: 1px solid #c0c0c0;
 	margin: 0 2px;
@@ -1085,7 +1086,7 @@ body{
 }
 
 div.wpcf7-validation-errors, div.wpcf7-mail-sent-ok{
-	border:0 !Important;
+	border:0 !important;
 }
 
 div.wpcf7-response-output{
@@ -2131,7 +2132,6 @@ p.contained80{
 	line-height: 1.5;
 }
 
-}
 .singlePost h1, .singlePost h2, .singlePost h3, .singlePost h4{
 	text-align:center;
 }
@@ -2577,12 +2577,7 @@ a, .contactPage input[type=button], .contactPage input[type=submit], .menuDrop1,
 	.infobar img{
 		width: 40px;
 		margin: 18px;
-	}	
-	
-	
-    . {
-        overflow-y:scroll;
-    }
+	}
 	
 	.site-branding{
 		display:none;
