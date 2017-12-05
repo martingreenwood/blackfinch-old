@@ -11,8 +11,8 @@
  * @package Blackfinch
  */
 function resizeIframe(obj) {
-    obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
-  }
+	obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
+}
 
 function changeMenu(){
 	$ = jQuery;
@@ -85,6 +85,11 @@ function changeMenu(){
 /*=============================
 =            CALLS            =
 =============================*/
+
+
+(function($){
+	$('input, textarea').placeholder();
+})(jQuery);
 
 (function($){
 	$(".termsOverlay input[type='radio']").click(function(){
