@@ -1057,6 +1057,12 @@ body{
 	letter-spacing:1px;
 }
 
+.ie .wpcf7-form input[type=text], 
+.ie .wpcf7-form input[type=email], 
+.ie .wpcf7-form textarea {
+	padding: 0;
+}
+
 .wpcf7-form input[type=submit]{
 	background:#3d4866;
 	border:none !important;
@@ -2320,7 +2326,10 @@ input:not([type]):focus:not([readonly]), input[type=text]:focus:not([readonly]),
 	padding:0 25px 25px 25px;
 }
 
-
+.placeholder
+{
+  color: #aaa;
+}
 
 .searchResults .posted-on{
 	margin-bottom:25px;
