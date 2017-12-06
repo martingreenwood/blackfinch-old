@@ -2737,6 +2737,10 @@ a, .contactPage input[type=button], .contactPage input[type=submit], .menuDrop1,
 	.nobg .entry-content{
 		margin-top:25px;
 	}
+
+	.menuChildren li a {
+		padding: 9px 0;
+	}
 	
 /*	
 	.menuPhoneIcon, .homeIcon{
