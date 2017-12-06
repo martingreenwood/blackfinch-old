@@ -409,13 +409,13 @@ function get_news(){
 
 		echo '<div class="singlePostMain navi">';
 
-			echo '<div class="wpb_column vc_column_container vc_col-sm-6 singlePostContain">';
+			echo '<div class="wpb_column vc_column_container vc_col-sm-6 singlePostContain prevNextLinks">';
 				echo '<div class="vc_column-inner "><div class="wpb_wrapper" style="text-align: left;">';
 					previous_posts_link( 'Next Entries' );
 				echo '</div></div>';
 			echo '</div>';
 
-			echo '<div class="wpb_column vc_column_container vc_col-sm-6 singlePostContain">';
+			echo '<div class="wpb_column vc_column_container vc_col-sm-6 singlePostContain prevNextLinks">';
 				echo '<div class="vc_column-inner "><div class="wpb_wrapper" style="text-align: right;">';
 					next_posts_link( 'Previous Entries', $postslist->max_num_pages );
 				echo '</div></div>';
@@ -477,13 +477,13 @@ function get_casestudies(){
 
 		echo '<div class="singlePostMain navi">';
 
-			echo '<div class="wpb_column vc_column_container vc_col-sm-6 singlePostContain">';
+			echo '<div class="wpb_column vc_column_container vc_col-sm-6 singlePostContain prevNextLinks">';
 				echo '<div class="vc_column-inner "><div class="wpb_wrapper" style="text-align: left;">';
 					previous_posts_link( 'Next Entries' );
 				echo '</div></div>';
 			echo '</div>';
 
-			echo '<div class="wpb_column vc_column_container vc_col-sm-6 singlePostContain">';
+			echo '<div class="wpb_column vc_column_container vc_col-sm-6 singlePostContain prevNextLinks">';
 				echo '<div class="vc_column-inner "><div class="wpb_wrapper" style="text-align: right;">';
 					next_posts_link( 'Previous Entries', $postslist->max_num_pages );
 				echo '</div></div>';
@@ -554,13 +554,13 @@ function get_events(){
 
 		echo '<div class="singlePostMain navi">';
 
-			echo '<div class="wpb_column vc_column_container vc_col-sm-6 singlePostContain">';
+			echo '<div class="wpb_column vc_column_container vc_col-sm-6 singlePostContain prevNextLinks">';
 				echo '<div class="vc_column-inner "><div class="wpb_wrapper" style="text-align: left;">';
 					previous_posts_link( 'Earlier Events' );
 				echo '</div></div>';
 			echo '</div>';
 
-			echo '<div class="wpb_column vc_column_container vc_col-sm-6 singlePostContain">';
+			echo '<div class="wpb_column vc_column_container vc_col-sm-6 singlePostContain prevNextLinks">';
 				echo '<div class="vc_column-inner "><div class="wpb_wrapper" style="text-align: right;">';
 					next_posts_link( 'Later Events', $postslist->max_num_pages );
 				echo '</div></div>';

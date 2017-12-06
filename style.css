@@ -2504,6 +2504,11 @@ a, .contactPage input[type=button], .contactPage input[type=submit], .menuDrop1,
 	margin-bottom: 7px !important;
 }
 
+.prevNextLinks {
+	width: 50% !important;
+	float: left;
+}
+
 /* Media Queries */
 
 @media screen and (max-width: 768px) {
