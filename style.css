@@ -2528,15 +2528,38 @@ a, .contactPage input[type=button], .contactPage input[type=submit], .menuDrop1,
 		margin-bottom: 20px;
 	}
 
-	.page .vc_custom_1511350742154,
-	.page .vc_custom_1511355360728,
-	.page .vc_custom_1511975554153,
-	.page .vc_custom_1511537962712, 
-	.page .vc_custom_1511538003808,  
-	.page .wpb_content_element,  
-	{
+	.page .vc_custom_1511350742154 {
 		padding-right: 0 !important;
 		padding-left: 0 !important;
+	}
+	.page .vc_custom_1511355360728 {
+		padding-right: 0 !important;
+		padding-left: 0 !important;
+	}
+	.page .vc_custom_1511975554153 {
+		padding-right: 0 !important;
+		padding-left: 0 !important;
+	}
+	.page .vc_custom_1511537962712 {
+		padding-right: 0 !important;
+		padding-left: 0 !important;
+	}
+	.page .vc_custom_1511538003808 {
+		padding-right: 0 !important;
+		padding-left: 0 !important;
+	}
+	.page .wpb_content_element {
+		padding-right: 0 !important;
+		padding-left: 0 !important;
+	}
+	.page .wpb_row {
+		padding-right: 0 !important;
+		padding-left: 0 !important;
+	}
+
+	.page .singlePostTitle {
+		padding-right: 20px !important;
+		padding-left: 20px !important;
 	}
 
 	.wpb_wrapper .vc_separator:last-of-type {
