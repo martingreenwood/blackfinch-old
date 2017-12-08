@@ -2509,6 +2509,10 @@ a, .contactPage input[type=button], .contactPage input[type=submit], .menuDrop1,
 	float: left;
 }
 
+.error404 div#content {
+	padding-top: 100px;
+}
+
 /* Media Queries */
 
 @media screen and (max-width: 768px) {
