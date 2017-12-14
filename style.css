@@ -421,12 +421,13 @@ figure {
 // }
 
 table {
-  border: 1px solid #ccc;
+  border: 1px solid #ccc !important;
   border-collapse: collapse;
   margin: 0;
   padding: 0;
   width: 100%;
   table-layout: fixed;
+  display: table !important;
 }
 table caption {
   font-size: 1.5em;
