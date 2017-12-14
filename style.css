@@ -428,10 +428,9 @@ table {
   width: 100%;
   table-layout: fixed;
   display: table !important;
-
-  h4 {
-  	margin: 15px 0;
-  }
+}
+table h4 {
+  margin: 15px 0;
 }
 table caption {
   font-size: 1.5em;
@@ -441,10 +440,9 @@ table tr {
   // background: #f8f8f8; 
   border: 1px solid #ddd;
   padding: .35em;
-
-  &:nth-child(odd){
-  		background: #f8f8f8;
-  }
+}
+table tr:nth-child(odd){
+	background: #f8f8f8;
 }
 table th,
 table td {
