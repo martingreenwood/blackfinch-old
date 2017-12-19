@@ -1828,6 +1828,13 @@ h1.thriveorange, .thriveorange{
 	
 }
 
+.termsOverlayContent .info {
+	height: 80%;
+    overflow: scroll;
+    margin-bottom: 10%;
+    position: relative;
+}
+
 
 .termsOverlay p{
 	font-family: 'Libre Franklin', sans-serif;
