@@ -39,7 +39,8 @@ function changeMenu(){
 	$ = jQuery;
 	var offset = $("#masthead").offset();
 	var searchMargin = offset.left + 260 ;
-	var emailMargin = offset.left + 335; 
+	var loginMargin = offset.left + 335; 
+	var emailMargin = offset.left + 405; 
 	var windowWidth = $('#page').width() - 260;
 	var windowWidth2 = $('#page').width();
 	
@@ -61,7 +62,8 @@ function changeMenu(){
 		$('.phoneWrap').hide();
 		$('.menuPhoneIcon').show();
 		$('.subPageBar .emailIcon').css('left','150px');
-		$('.subPageBar .searchIcon ').css('left','225px');
+		$('.subPageBar .loginIcon').css('left','225px');
+		$('.subPageBar .searchIcon ').css('left','350px');
 		
 		$('.smallMenu').show();
 		
@@ -78,6 +80,9 @@ function changeMenu(){
 		$('.menuPhoneIcon').hide();
 		$('.subPageBar .emailIcon').css('left', 'inherit');
 		$('.subPageBar .emailIcon').css('right', emailMargin);
+
+		$('.subPageBar .loginIcon').css('left', 'inherit');
+		$('.subPageBar .loginIcon').css('right', loginMargin);
 		
 		$('.subPageBar .searchIcon ').css('left','inherit');
 		$('.subPageBar .searchIcon ').css('right', searchMargin);
@@ -217,7 +222,8 @@ function changeMenu(){
 	var newHeight = barHeight - phoneHeight / 2;
 	var offset = $("#masthead").offset();
 	var searchMargin = offset.left + 260 ;
-	var emailMargin = offset.left + 335; 
+	var loginMargin = offset.left + 335; 
+	var emailMargin = offset.left + 405; 
 	var phoneWidth = $("#masthead").width() - 260 - 150 -75;
 	
 	changeMenu()
@@ -226,6 +232,7 @@ function changeMenu(){
 	
 	$('.subPageBar .searchIcon').css('right', searchMargin);
 	$('.subPageBar .emailIcon').css('right', emailMargin);
+	$('.subPageBar .loginIcon').css('right', loginMargin);
 	
 	
 	$('.menuChildren').css('right', offset.left);
@@ -242,7 +249,8 @@ function changeMenu(){
 		var newHeight = barHeight - phoneHeight / 2;
 		var offset = $("#masthead").offset();
 		var searchMargin = offset.left + 260 ;
-		var emailMargin = offset.left + 335; 
+		var loginMargin = offset.left + 335; 
+		var emailMargin = offset.left + 405; 
 		var phoneWidth = $("#masthead").width() - 260 - 150 -75;
 		
 		changeMenu()
@@ -250,6 +258,7 @@ function changeMenu(){
 		$('.subPageBar .phoneWrap').css('width', phoneWidth);
 		
 		$('.subPageBar .searchIcon').css('right', searchMargin);
+		$('.subPageBar .loginIcon').css('right', loginMargin);
 		$('.subPageBar .emailIcon').css('right', emailMargin);
 		
 		$('.menuChildren').css('right', offset.left);

@@ -5,6 +5,7 @@
             <div class="searchBar">
                 <div class="phoneIcon"><img class="" src="<?php echo get_template_directory_uri(); ?>/img/phone.svg" /></div>
                 <div class="emailIcon2"><a href="<?php echo home_url("/contact"); ?>"><img class="" src="<?php echo get_template_directory_uri(); ?>/img/email.svg" /></a></div>
+                <div class="loginIcon2"><a href="<?php echo home_url("/adviser-portal"); ?>"><img class="" src="<?php echo get_template_directory_uri() ; ?>/img/login.svg"></a></div>
 
                 <form class="search-form" role="search" method="get" action="<?php echo home_url( "/" ); ?>">
                     <input type="text" placeholder="Search" class="searchExpand" value="<?php echo get_search_query(); ?>" name="s" />
@@ -18,12 +19,14 @@
             <div class="homeIcon"><a href="<?php echo home_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/bf-icon-white.svg"></a></div>
             <div class="menuPhoneIcon"><img class="" src="<?php echo get_template_directory_uri(); ?>/img/phone.svg" /></div>
             <div class="searchIcon"><img class="" src="<?php echo get_template_directory_uri(); ?>/img/search.svg" /></div> 
+            <div class="loginIcon"><a href="<?php echo home_url("/adviser-portal"); ?>"><img class="" src="<?php echo get_template_directory_uri() ; ?>/img/login.svg"></a></div>
             <div class="emailIcon"><a href="<?php echo home_url("/contact"); ?>"><img class="" src="<?php echo get_template_directory_uri(); ?>/img/email.svg"></a></div>
             
             <div class="smallMenu">
                 <div class="smallHome"><a href="<?php echo home_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/home.svg"></a></div>
                 <div class="smallPhone"><img class="" src="<?php echo get_template_directory_uri(); ?>/img/phone.svg"></div>
                 <div class="smallEmail"><a href="<?php echo home_url("/contact"); ?>"><img class="" src="<?php echo get_template_directory_uri(); ?>/img/email.svg"></a></div>
+                <div class="smallLogin"><a href="<?php echo home_url("/adviser-portal"); ?>"><img class="" src="<?php echo get_template_directory_uri() ; ?>/img/login.svg"></a></div>
                 <div class="smallSearch"><img class="" src="<?php echo get_template_directory_uri(); ?>/img/search.svg"></div> 
                 <div class="smallMenu"><img class="" src="<?php echo get_template_directory_uri(); ?>/img/menu.svg"></div>
             </div>
@@ -55,6 +58,7 @@
             <div class="searchBar">
                 <div class="phoneIcon"><img class="" src="<?php echo get_template_directory_uri(); ?>/img/phone.svg" /></div>
                 <div class="emailIcon2"><a href="<?php echo home_url("/contact"); ?>"><img class="" src="<?php echo get_template_directory_uri(); ?>/img/email.svg" /></a></div>
+                <div class="loginIcon2"><a href="<?php echo home_url("/adviser-portal"); ?>"><img class="" src="<?php echo get_template_directory_uri() ; ?>/img/login.svg"></a></div>
 
                 <form method="get" action="<?php echo home_url( "/" ); ?>">
                     <input type="text" placeholder="Search" class="searchExpand" value="" name="s" />
@@ -66,6 +70,7 @@
                 <div class="smallHome"><a href="<?php echo home_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/bf-icon-white.svg" /></a></div>
                 <div class="smallPhone"><a href="tel:01684 571 255"><img class="" src="<?php echo get_template_directory_uri(); ?>/img/phone.svg" /></a></div>
                 <div class="smallEmail"><a href="<?php echo home_url("/contact"); ?>"><img class="" src="<?php echo get_template_directory_uri(); ?>/img/email.svg" /></a></div>
+                <div class="smallLogin"><a href="<?php echo home_url("/adviser-portal"); ?>"><img class="" src="<?php echo get_template_directory_uri() ; ?>/img/login.svg"></a></div>
                 <div class="smallSearch"><img class="" src="<?php echo get_template_directory_uri(); ?>/img/search.svg" /></div> 
                 <div class="smallBurger"><img class="" src="<?php echo get_template_directory_uri(); ?>/img/menu.svg" /></div>
             </div>
